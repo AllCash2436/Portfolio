@@ -1,0 +1,53 @@
+/* Стили для главной страницы */
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.cookie-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.cookie-content {
+    text-align: center;
+}
+
+.cookie-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cookie-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#close-cookie-popup {
+    background-color: #298360;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#close-cookie-popup:hover {
+    background-color: #1a6041;
+}

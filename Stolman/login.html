@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация и авторизация</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li><a href="basket.html">Корзина</a></li>
+            <li><a href="checkout.html">Оформление заказа</a></li>
+            <li><a href="lk.html">Личный кабинет</a></li>
+            <li><a href="history.html">История заказов</a></li>
+            <li><a href="stat.html">статистика заказов</a></li>
+        </ul>
+    </nav>
+    <h2>Регистрация и авторизация</h2>
+    <section class="registration-form">
+        <form id="login-form">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="button" id="login-btn">Авторизироваться</button>
+            <button type="button" id="register-btn">Зарегистрироваться</button>
+           
+            <p id="error-message" style="color: red;"></p>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 STOLMAN</p>
+    </footer>
+    <script src="login.js"></script>
+        <script >
+            
+        </script>
+</body>
+</html>

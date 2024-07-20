@@ -1,0 +1,76 @@
+/* Специфичные стили для страницы "История заказов" */
+
+/* Заголовок */
+header h1 {
+    font-size: 24px;
+    margin-top: 20px; /* Увеличим отступ от верхнего края */
+}
+
+/* Секция с заказами */
+#order-list {
+    padding: 20px;
+}
+
+#order-list p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#order-list ul {
+    list-style: none;
+}
+
+#order-list ul li {
+    margin-bottom: 5px;
+}
+
+#order-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Кнопка "Смотреть" */
+.btn {
+    margin-top: 20px;
+}
+/* Футер */
+footer {
+    background-color: #298360;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* history.css */
+
+/* Стили для таблицы с историей заказов */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #f2f2f2;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.order-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}

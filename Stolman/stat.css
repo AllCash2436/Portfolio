@@ -1,0 +1,36 @@
+#sales-chart-canvas {
+    width: 200px;
+    height: 580px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стили для таблицы с данными статистики продаж */
+#sales-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#sales-data-table th, #sales-data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#sales-data-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+#sales-data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#sales-data-table tr:hover {
+    background-color: #ddd;
+}

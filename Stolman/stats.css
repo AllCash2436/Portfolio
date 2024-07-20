@@ -1,0 +1,38 @@
+/* stats.css */
+
+/* Общие стили для контейнера статистики */
+#stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* Стили для контейнера статистики продаж */
+#sales-stats,
+#visits-stats {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Стили для заголовков */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для записей о посещениях и продажах */
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5; /* Межстрочный интервал */
+    padding: 5px; /* Добавим немного отступа вокруг текста */
+    border-bottom: 1px solid #ccc; /* Линия между строками */
+}
+
+/* Уберем линию у последней строки */
+p:last-child {
+    border-bottom: none;
+}

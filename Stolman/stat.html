@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика продаж</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stat.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li><a href="basket.html">Корзина</a></li>
+                <li><a href="checkout.html">Оформление заказа</a></li>
+                <li><a href="lk.html">Личный кабинет</a></li>
+                <li><a href="history.html">История заказов</a></li>
+                <li><a href="stat.html">статистика заказов</a></li>
+            </ul>
+    </header>
+    <h2>Статистика продаж</h2>
+    <main>
+        <section id="sales-chart">
+            <!-- График статистики продаж будет отображаться здесь -->
+            <canvas id="sales-chart-canvas"></canvas>
+        </section>
+        <section id="sales-data">
+            <!-- Таблица с данными статистики продаж будет отображаться здесь -->
+            <table id="sales-data-table">
+                <thead>
+                    <tr>
+                        <th>Название товара</th>
+                        <th>Количество продаж</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Таблица будет заполнена данными при загрузке страницы -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="sales-statistics.js"></script>
+</body>
+</html>
