@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="popup" class="popup">
+			<a href="#" class="popup__area"></a>
+			<div class="popup_body">
+				<div class="popup__content">
+					<a href="#" class="popup__close">&#10005;</a>
+					<div class="popup__content__title">
+						<div class="popup__title">
+							Получите профессиональную консультацию нашего специалиста
+							<p class="popup__subtitle">
+								Перезвоним и поможем с выбором металлорежущего инструмента<br />
+								для вашего производства
+							</p>
+						</div>
+
+						<img src="images/pop-ap_image.png" class="popup__image" alt="" />
+					</div>
+					<form id="popup__form">
+						<div>
+							<input
+								class="popup__input"
+								type="text"
+								id="fullname"
+								name="fullname"
+								placeholder="ФИО"
+								required
+							/>
+						</div>
+						<div>
+							<input
+								class="popup__input"
+								type="tel"
+								id="phone"
+								name="phone"
+								placeholder="+7 999 999 999"
+								required
+							/>
+						</div>
+						<div>
+							<input
+								class="popup__input"
+								type="email"
+								id="email"
+								name="email"
+								placeholder="E-mail"
+								required
+							/>
+						</div>
+						<div>
+							<input
+								class="popup__input"
+								type="text"
+								id="company"
+								name="company"
+								placeholder="Название организации"
+							/>
+						</div>
+						<textarea
+							class="popup__input popup__textarea"
+							id="message"
+							name="message"
+							rows="4"
+							cols="50"
+							placeholder="Ваш запрос"
+						></textarea>
+						<div class="popup__checkbox">
+							<input type="checkbox" id="consent" name="consent" required />
+							<label for="consent">
+								Нажимая на кнопку вы подтверждаете, что ознакомлены с
+								<a href="https://mega-tec.ru/political/" target="_blank"
+									>политикой конфиденциальности</a
+								>
+							</label>
+						</div>
+						<div class="popup__checkbox">
+							<input type="checkbox" id="subscribe" name="subscribe" />
+							<label for="subscribe">
+								Подпишитесь на рассылку и получите
+								<strong>скидку 10% на первый заказ</strong> любого инструмента
+								на нашем сайте
+							</label>
+						</div>
+						<button class="popup__btn" type="submit">Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Поп-ап с подпиской -->
+		<div id="popup__subscribe" class="popup__subscribe">
+			<a href="#" class="popup__area"></a>
+			<div class="popup_body">
+				<div class="popup__sub__content">
+					<a href="#" class="popup__close">&#10005;</a>
+					<img src="images/logo.png" class="popup__sub__image" alt="" />
+					<div class="popup__title popup__sub__title">
+						Спасибо за подписку! 
+					</div>
+					<p class="popup__subtitle popup__sub__subtitle">
+						Проверьте ваш почтовый ящик
+					</p>
+					<a href="#" class="popup__btn popup__sub__btn">На главную</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Поп-ап без подписки -->
+		<div id="popup__no__subscribe" class="popup__no__subscribe">
+			<a href="#" class="popup__area"></a>
+			<div class="popup_body">
+				<div class="popup__no__sub__content">
+					<a href="#" class="popup__close">&#10005;</a>
+					<img src="images/logo.png" class="popup__sub__image" alt="" />
+					<div class="popup__title popup__sub__title">Спасибо! </div>
+					<p
+						class="popup__subtitle popup__sub__subtitle popup__no__sub__subtitle"
+					>
+						Наш специалист свяжется <br />
+						с Вами в ближайшее время
+					</p>
+					<a href="#" class="popup__btn popup__sub__btn">На главную</a>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

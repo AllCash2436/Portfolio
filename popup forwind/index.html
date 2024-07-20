@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>ForWind pop-up</title>
+	</head>
+	<body>
+		<div id="popup" class="popup">
+			<a href="#" class="popup__area"></a>
+			<div class="popup_body">
+				<div class="popup__content">
+					<a href="#" class="popup__close">×</a>
+					<img src="images/popup_img.png" class="popup__image" alt="" />
+					<div class="popup__container">
+						<div class="popup__title">
+							От вас — <span class="highlight">email</span>, от нас —
+							<span class="highlight">актуальные новости</span> MICE по южному
+							региону
+							<p class="popup__subtitle">
+								Подпишитесь на нашу рассылку, чтобы получать полезные новости
+								для профессионалов отрасли по
+								<b>Сочи, Геленджику, Абхазии, КавМинВодам</b> и другим локациям
+								<b>Черноморского побережья</b> и <b>Кавказа</b>.
+							</p>
+						</div>
+						<form id="popup__form">
+							<div class="email__input">
+								<input
+									class="popup__input"
+									type="email"
+									id="email"
+									name="email"
+									placeholder="* Ваш email"
+								/>
+								<p id="emailError" class="error-message">Обязательное поле</p>
+							</div>
+							<button class="popup__btn" type="submit">
+								ПОДПИСАТЬСЯ НА РАССЫЛКУ
+							</button>
+						</form>
+						<div class="popup__checkbox">
+							<input type="checkbox" id="consent" name="consent" required />
+							<label for="consent">
+								Нажимая на кнопку вы подтверждаете, что соглашаетесь с
+								<a
+									class="privacy__policy"
+									href="https://forwind.ru/politika"
+									target="_blank"
+									>политикой конфиденциальности</a
+								>
+							</label>
+						</div>
+						<p id="consentError" class="error-message">
+							Вы не можете подписаться, если не согласны с политикой
+							конфиденциальности
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Поп-ап с подпиской -->
+		<div id="popup__subscribe" class="popup__subscribe">
+			<a href="#" class="popup__area"></a>
+			<div class="popup_body">
+				<div class="popup__sub__content">
+					<img src="images/popup_img.png" class="popup__image" alt="" />
+					<a href="#" class="popup__close">×</a>
+					<div class="popup__title popup__sub__title">
+						<span class="highlight"> Спасибо за подписку!</span> <br />
+						Проверьте ваш почтовый ящик <br />и подтвердите подписку
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

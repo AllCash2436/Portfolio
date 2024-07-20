@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodDelivery</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <meta name="description" content="Welcome to FoodDelivery - Enjoy Delicious Food Delivered to Your Doorstep">
+    <meta name="keywords" content="food delivery, online food, order food, restaurant, cuisine, delicious, delivery service">
+</head>
+<body>
+<!--Header-->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="images/LOGO.png" alt="">
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#intro">Home</a>
+                    <a class="nav__link" href="#" data-scroll="#Company">Company</a>
+                    <a class="nav__link" href="#" data-scroll="#features">Order</a>
+                    <a class="nav__link" href="#" data-scroll="#menu">Menu</a>
+                    <a class="nav__link" href="#" data-scroll="#FAQ">FAQ</a>
+<!--                    <img class="nav__link" src="images/BUCKET.png" alt="">-->
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">MENU</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<!--Intro-->
+<div class="intro" id="intro">
+    <div class="container">
+       <div class="content">
+            <div class="intro__left">
+               <div class="intro__title">
+                   Beautiful food &#38; takeaway,  <span style="color: #35B8BE;">delivered</span> to your door.
+               </div>
+
+               <p class="intro__subtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                <div class="btn">
+                    <button class="button">Place an Order</button>
+                </div>
+                <div class="subbtn__img">
+                    <img src="images/INTRO__STAR.png" alt="">
+                </div>
+                <div class="subbtn__text">
+                   <span style="color: #35B8BE;">4.8 out of 5</span> based on 2000+ reviews
+                </div>
+            </div>
+
+            <img class="intro__right" src="images/INTRO_IMG.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--Page 2 -->
+<div class="intro_2" id="Company">
+    <div class="container">
+       <div class="content">
+            <div class="intro__left_2">
+                <div class="intro__title"> <span style="color: #35B8BE;">The home of <br>fresh products </span></div>
+
+               <p class="intro__subtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                <div class="btn">
+                    <button class="button_2">Learn about us</button>
+                </div>
+            </div>
+
+            <img class="intro__right_2" src="images/INTRO2_IMG.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+<!--Features-->
+<div class="container" id="features">
+   <div class="features__name">How it works</div>
+    <div class="features" id="feature">
+        <div class="features__item">
+            <img class="features__icon" src="images/2PAGE_1.png" alt="">
+            <h4 class="features__title">Adapt your menu items</h4>
+            <div class="features__text">Easily adapt your menu using the webflow CMS and allow customers to browse your items.</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="images/2PAGE_2.png" alt="">
+            <h4 class="features__title">Accept online orders &#38; takeout</h4>
+            <div class="features__text">Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.</div>
+        </div>
+
+        <div class="features__item">
+            <img class="features__icon" src="images/2PAGE_3.png" alt="">
+            <h4 class="features__title">Manage delivery or takeout</h4>
+            <div class="features__text">Manage your own logistics and take orders simply through the ecommerce system.</div>
+        </div>
+    </div>
+</div>
+
+
+<!--Menu-->
+   <div class="menu" id="menu">
+<div class="container">
+
+    <h2 class="menu__title">Browse our menu</h2>
+    <div class="menu_subtitle">
+        Use our menu to place an order online, or phone our store <br>to place a pickup order. Fast and fresh food.
+    </div>
+    <div class="buttons">
+      <button class="menu-button" onclick="showMenu('burgers')">Burgers</button>
+      <button class="menu-button" onclick="showMenu('sides')">Sides</button>
+      <button class="menu-button" onclick="showMenu('drinks')">Drinks</button>
+    </div>
+    <div class="menu-items">
+      <div class="menu-item burgers">
+        <img src="images/menu_items/Cheeze.webp" alt="Burger 1" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$5.93</div>
+             <h3 class="menu-item-title">Cheeseburger</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+       <div class="menu-item burgers">
+        <img src="images/menu_items/large.webp" alt="Burger 2" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$6.90</div>
+             <h3 class="menu-item-title">Grand</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+       <div class="menu-item burgers">
+        <img src="images/menu_items/big_spesh.webp" alt="Burger 3" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$10.99</div>
+             <h3 class="menu-item-title">Big Special</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+       <div class="menu-item burgers">
+        <img src="images/menu_items/chiken.webp" alt="Burger 4" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$5.90</div>
+             <h3 class="menu-item-title">Chicken Hit</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+       <div class="menu-item burgers">
+        <img src="images/menu_items/fish.webp" alt="Burger 5" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$8.99</div>
+             <h3 class="menu-item-title">Double Fishburger</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+       <div class="menu-item burgers">
+        <img src="images/menu_items/Chicken%20Prime.webp" alt="Burger 6" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$12.99</div>
+             <h3 class="menu-item-title">Chicken Prime</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item sides">
+        <img src="images/menu_items/Grand%20Fries%20small.webp" alt="Side 1" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$2.99</div>
+             <h3 class="menu-item-title">Grand Fries small</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item sides">
+        <img src="images/menu_items/Cheese%20triangles%20Chorizo.webp" alt="Side 2" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$5.99</div>
+             <h3 class="menu-item-title">Cheese triangles Chorizo</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item sides">
+        <img src="images/menu_items/Snack%20Box.webp" alt="Side 3" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$9.99</div>
+             <h3 class="menu-item-title">Snack Box</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item sides">
+        <img src="images/menu_items/Strips%20(3%20pcs.).webp" alt="Side 4" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$3.99</div>
+             <h3 class="menu-item-title">Strips (3 pcs.)</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item sides">
+        <img src="images/menu_items/Shrimp%20(4%20pcs.).webp" alt="Side 5" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$11.99</div>
+             <h3 class="menu-item-title">Shrimp (4 pcs.)</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item sides">
+        <img src="images/menu_items/Nuggets%20(4%20pcs.).webp" alt="Side 6" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$2.99</div>
+             <h3 class="menu-item-title">Nuggets (4 pcs.)</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item drinks">
+        <img src="images/menu_items/Orange%20juice%20(small).webp" alt="Drink 1" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$1.99</div>
+             <h3 class="menu-item-title">Orange juice (small)</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item drinks">
+        <img src="images/menu_items/Apple%20juice%20(small).webp" alt="Drink 2" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$10</div>
+             <h3 class="menu-item-title">Apple juice (small)</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item drinks">
+        <img src="images/menu_items/Vanilla%20Cocktail.webp" alt="Drink 3" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$2.99</div>
+             <h3 class="menu-item-title">Vanilla Cocktail</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item drinks">
+        <img src="images/menu_items/Strawberry%20Cocktail.webp" alt="Drink 4" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$3.99</div>
+             <h3 class="menu-item-title">Strawberry Cocktail</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item drinks">
+        <img src="images/menu_items/Chocolate%20Cocktail.webp" alt="Drink 5" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$3.99</div>
+             <h3 class="menu-item-title">Chocolate Cocktail</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+      <div class="menu-item drinks">
+        <img src="images/menu_items/Lipton%20Green.webp" alt="Drink 6" class="menu-item-image">
+        <div class="menu-item-details">
+             <div class="menu-item-price">$1.99</div>
+             <h3 class="menu-item-title">Lipton Green</h3>
+          <p class="menu-item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="add-to-cart-button" onclick="addToCart(this)" data-counter="0">Add to Cart (0)</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="btn_3">
+        <button class="button_3">See Full Menu</button>
+    </div>
+  </div>
+</div>
+
+ <!--Page 5 -->
+<div class="intro_5" id="FAQ">
+    <div class="container">
+       <div class="content_5">
+            <img class="intro__right_5" src="images/INTRO5_IMG.png" alt="">
+
+            <div class="intro__left_5">
+              <div class="intro__title"> <span style="color: #35B8BE;">Order online with <br>our simple checkout.</span>
+               </div>
+
+               <p class="intro__subtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                <div class="btn">
+                    <button class="button_5">See our FAQ</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+  <!--Page 6 -->
+<div class="intro_6" id="Contacts">
+    <div class="container">
+       <div class="content">
+            <div class="intro__left_6">
+              <div class="intro__title"> <span style="color: #35B8BE;">Call our store and <br>takeaway when it <br>suits you best.</span>
+               </div>
+
+               <p class="intro__subtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                <div class="btn">
+                    <button class="button_6">Ph. +61 233 2333</button>
+                </div>
+            </div>
+
+            <img class="intro__right_6" src="images/INTRO6_IMG.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+<!--Footer-->
+
+<footer class="footer">
+    <div class="container">
+
+    <div class="footer__inner">
+        <div class="footer__block">
+            <h4 class="footer__title">Location</h4>
+            <address class="footer__address">
+                <div>3481 Melrose Place</div>
+                <div>Beverly Hills, CA 90210</div>
+            </address>
+        </div>
+
+        <div class="footer__block">
+            <h4 class="footer__title">Contacts</h4>
+            <address class="footer__address">
+                <div>Ph. +61 233 2333</div>
+            </address>
+        </div>
+
+        <div class="footer__block">
+            <h4 class="footer__title">Сonfidentiality</h4>
+            <address class="footer__address">
+                        <a class="footer__link" href="%D0%A1onfidentiality.html">the policy of confidentiality</a>
+            </address>
+
+        </div>
+   </div> <!-- footer__inner-->
+   <div class="sub__footer"><hr>Built by <span style="color: #35B8BE;">Flowbase</span>· Powered by <span style="color: #35B8BE;">Webflow</span></div>
+ </div> <!-- container-->
+</footer>
+
+<!--JavaScript-->
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

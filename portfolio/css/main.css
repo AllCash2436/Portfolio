@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Base */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.none {
+	display: none !important;
+}
+/* header */
+.header {
+	position: relative;
+	padding: 80px 0;
+	color: #fff;
+	border-bottom-right-radius: 100px;
+	background-color: #000;
+	overflow: hidden;
+	/* background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%); */
+}
+
+.header .container {
+	position: relative;
+	z-index: 9;
+}
+
+.header__video {
+	position: absolute;
+	border-bottom-right-radius: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	opacity: 0.3;
+}
+
+.header__row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: 60px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header__img {
+	max-width: 540px;
+	max-height: 500px;
+	border-radius: 80px;
+}
+
+.header__title {
+	margin-bottom: 10px;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.header__text {
+	margin-bottom: 20px;
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.header__btns {
+	display: flex;
+	column-gap: 20px;
+}
+
+.btn {
+	color: #fff;
+	background-color: #000;
+	border-radius: 8px;
+	height: 48px;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	line-height: 1;
+
+	transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+	background-color: #2962cc;
+}
+
+.btn__outline {
+	color: #fff;
+	border-radius: 8px;
+	border: 1px solid #3b3b3b;
+	height: 48px;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	line-height: 1;
+	transition: all 0.2s ease-in;
+}
+
+.btn__outline:hover {
+	border-color: #2962cc;
+}
+
+/* Portfolio */
+
+.portfolio {
+	padding: 80px 0;
+}
+
+.portfolio__title {
+	font-size: 52px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 65px;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	row-gap: 70px;
+	align-items: center;
+}
+
+.project {
+	text-align: center;
+}
+
+.project__img {
+	margin-bottom: 30px;
+
+	border-radius: 30px;
+
+	transition: opacity 0.2s ease-in;
+}
+
+.project__img:hover {
+	opacity: 0.5;
+}
+
+.project__title {
+	font-size: 22px;
+}
+
+.project__title a {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* Contacts */
+
+.contacts {
+	padding: 80px 0;
+	background-color: #252525;
+	border-top-left-radius: 100px;
+	color: #fff;
+}
+
+.contacts__title {
+	font-size: 52px;
+	font-weight: 700;
+
+	margin-bottom: 65px;
+	text-align: center;
+}
+
+.messangers {
+	display: flex;
+	column-gap: 30px;
+	row-gap: 30px;
+	flex-wrap: wrap;
+}
+
+.messanger {
+	flex-grow: 1;
+
+	display: flex;
+	column-gap: 15px;
+	font-size: 20px;
+	align-items: center;
+	padding: 46px 20px;
+	border-radius: 20px;
+	border: 1px solid #363636;
+
+	color: #fff;
+	transition: all 0.2s ease-in;
+}
+
+.messanger:hover {
+	background-color: #1e1e1e;
+}
+
+/* Footer */
+
+.footer {
+	padding: 30px 0;
+	background-color: #1e1e1e;
+	color: #5d5d5d;
+}
+
+.footer a {
+	color: #5886a8;
+}
+
+.footer__inner {
+	font-size: 14px;
+	text-align: center;
+}
+
+.footer__inner p + p {
+	margin-top: 15px;
+}
+
+/* inner__page */
+
+.inner__page {
+	padding: 80px 0 40px;
+}
+
+.inner__page_details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 25px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.inner__page__title {
+	font-size: 52px;
+	font-weight: 700;
+}
+
+.inner__page__text {
+	max-width: 570px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+
+	color: #555555;
+	line-height: 1.5;
+}
+
+.inner__page__link {
+	color: #000;
+}
+
+.inner__page__link a {
+	color: #000;
+}
+
+.inner__page__img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.inner__page__backlink {
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+	justify-content: center;
+	max-width: 770px;
+	background-color: #f1f1f1;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+	color: #000;
+
+	transition: all 0.2s ease-in;
+}
+
+.inner__page__backlink:hover {
+	background-color: #b8b8b8;
+}
